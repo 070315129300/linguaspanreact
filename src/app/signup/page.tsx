@@ -112,7 +112,7 @@ const SignUp = () => {
   return (
     <div className="bg-[#FBFBFB]">
       <div className="flex flex-col justify-center h-screen gap-4 md:bg-hero md:bg-cover md:bg-no-repeat">
-        <div className="   md:bg-white z-10 lg:mx-[200px] mx-4 md:mx-[150px] xl:mx-[490px] md:drop-shadow-2xl md:rounded-[20px] ">
+        <div className="   md:bg-white z-10 lg:mx-[200px] mx-4 md:mx-[150px] xl:mx-[490px] smallLaptopScreenText md:drop-shadow-2xl md:rounded-[20px] ">
           <div className="md:px-4 md:py-6">
             <div className="flex flex-col justify-center items-center">
               <div className="flex justify-center">

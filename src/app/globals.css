@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@media (min-width: 1280px) and (max-width: 1350px) {
+    .smallLaptopScreenText {
+      margin: 0 450px 0 400px !important;
+    }
+   
+}
