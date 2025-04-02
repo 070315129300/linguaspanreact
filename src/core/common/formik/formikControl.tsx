@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Input from "../../../components/input";
+import Input from "@/components/input";
 
 interface IFormikControlProps {
   control: "input" | "textarea" | "select" | "radio" | "checkbox" | "date";

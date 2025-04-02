@@ -5,6 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors:{
+        'white':'#FFFFFF',
+        'black':'#000000',
+      },
+      backgroundImage:{
+        "hero":"url('/images/auth-bg.png')",
+        
+      },
       animation: {
         shake: "shake 0.82s cubic-bezier(.36, .07, .19, .97) both",
       },

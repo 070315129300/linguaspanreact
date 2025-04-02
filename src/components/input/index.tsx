@@ -63,7 +63,7 @@ const Input: React.FC<InputProps> = ({
           <Field
             disabled={disabled}
             className={classes(
-              "form__input w-full py-[2px] px-2 rounded-md text-sm text-black bg-placeholder border border-[#E6ECF7] focus:outline-none  relative font-normal min-h-[38px] focus:shadow-[0_0_3px_#E6ECF7] max-h-[38px] pr-[42px] disabled:cursor-not-allowed",
+              "form__input w-full py-[2px] px-4 rounded-lg text-sm placeholder:text-sm placeholder:font-light placeholder:text-[#AFAFB0] text-black bg-placeholder border-[0.7px] border-[#DADADA] focus:outline-none  relative font-normal min-h-[51px] focus:shadow-[0_0_3px_#E6ECF7] max-h-[51px] pr-[42px] disabled:cursor-not-allowed",
               className
             )}
             type={type === "password" ? inputType : type}
@@ -82,12 +82,12 @@ const Input: React.FC<InputProps> = ({
           {type === "password" && (
             <div
               onClick={() => handleClick()}
-              className="absolute right-2 top-[12px] h-6 w-6 "
+              className="absolute right-2 top-[17px] h-6 w-6 "
             >
               {inputType === "password" ? (
-                <FaEyeSlash className="font-black text-[#000000] text-base" />
+                <FaEyeSlash className="font-black text-[#AFAFB0] text-base" />
               ) : (
-                <FaEye className="font-black text-[#000000] text-base" />
+                <FaEye className="font-black text-[#AFAFB0] text-base" />
               )}
             </div>
           )}
