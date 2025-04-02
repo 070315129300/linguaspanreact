@@ -346,7 +346,7 @@ const Login = () => {
         </div>
       </div>
       {
-        isForgotPasswordModal && <ForgotPasswordModal/>
+        isForgotPasswordModal ? <ForgotPasswordModal/> : ""
       }
       
     </div>

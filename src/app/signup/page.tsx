@@ -344,7 +344,7 @@ const SignUp = () => {
         </div>
       </div>
       {
-        isForgotPasswordModal && <ForgotPasswordModal/>
+        isForgotPasswordModal ? <ForgotPasswordModal/> : ""
       }
     </div>
   );
