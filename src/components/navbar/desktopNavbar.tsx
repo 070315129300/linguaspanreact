@@ -10,27 +10,30 @@ const DesktopNavbar = () => {
   return (
     <div className="hidden xl:flex justify-center ">
       <div
-        className={` w-full 2xl:max-w-[980px] flex justify-between items-center pt-3`}
+        className={` w-full 2xl:max-w-[980px] flex justify-between items-center pt-9`}
       >
+        {/* Logo */}
         <div className="relative">
           <Image
             src="/images/Linguaspan-authLogo.svg"
             alt=""
-            className={` w-auto h-[67px] `}
+            className={` w-auto h-[60px] `}
             width={0}
             height={0}
             sizes="100vw"
           />
         </div>
-        <div className="flex items-center gap-x-8">
+
+        {/* Contribute, Languages, About */}
+        <div className="flex items-center gap-x-9">
           <div className="">
-            <Accordion type="single" collapsible className="bg-white  ">
-              <AccordionItem value="item-1" className={`px-5`}>
+            <Accordion type="single" collapsible className="  ">
+              <AccordionItem value="item-1" className={``}>
                 <AccordionTrigger className="text-[#040408] uppercase font-medium">
                   <p>Contribute</p>
                 </AccordionTrigger>
                 <AccordionContent
-                  className="max-w-[140px]  md:min-w-[235px] !z-1000 !bg-white text-white space-y-3 
+                  className="max-w-[140px] md:min-w-[235px] !z-1000 !bg-white text-white space-y-3 
                         bg-white text-[#7B7583]"
                 >
                   <div className="bg-[#e5e5ea] w-full">
@@ -106,10 +109,11 @@ const DesktopNavbar = () => {
           <div className="text-[#040408] uppercase font-medium">About</div>
         </div>
 
-        <div className="">
+        {/* IP dropdown */}
+        <div className="flex items-center gap-x-5">
           <div className="">
-            <Accordion type="single" collapsible className="bg-white  ">
-              <AccordionItem value="item-1" className={`px-5`}>
+            <Accordion type="single" collapsible className="">
+              <AccordionItem value="item-1" className={` `}>
                 <AccordionTrigger className="flex gap-x-2 bg-[#00013A] rounded-[20px] text-white uppercase font-medium px-4">
                 <div className="relative">
                     <Image
@@ -124,7 +128,7 @@ const DesktopNavbar = () => {
                   <p>IP</p>
                 </AccordionTrigger>
                 <AccordionContent
-                  className="max-w-[140px]  md:min-w-[235px] !z-1000 !bg-white text-white space-y-3 
+                  className="max-w-[140px] mt-4 pt-3 rounded-t-[10px] md:min-w-[170px] !z-1000 !bg-white text-white space-y-3 
                         bg-white text-[#7B7583]"
                 >
                 
@@ -175,6 +179,20 @@ const DesktopNavbar = () => {
               </AccordionItem>
             </Accordion>
           </div>
+          <div className="">
+            <Image
+              src="/icons/notification.svg"
+              alt=""
+              className={` w-auto h-[27px] `}
+              width={0}
+              height={0}
+              sizes="100vw"
+            />
+          </div>
+          <div className="">
+            <p className="flex items-center border border-[#DADADA] py-3 px-5 rounded-xl">EN</p>
+          </div>
+          
         </div>
       </div>
     </div>
