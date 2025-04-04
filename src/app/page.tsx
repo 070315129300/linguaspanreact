@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { Lato, Nunito_Sans } from "next/font/google";
 import DesktopNavbar from "@/components/navbar/desktopNavbar";
+import Footer from "@/components/footer";
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
@@ -414,6 +415,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
